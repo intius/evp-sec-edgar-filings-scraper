@@ -13,7 +13,7 @@
           ]
         }
       },
-      "id": "40e1eeb8-aaea-4202-a77d-862126ebc75d",
+      "id": "56db351e-f5a5-46d1-a57f-c26ad991ea1b",
       "name": "Run every morning",
       "type": "n8n-nodes-base.scheduleTrigger",
       "typeVersion": 1.2,
@@ -41,7 +41,7 @@
         "build": "latest",
         "authentication": "apifyApi"
       },
-      "id": "ee390c09-31b5-4ac4-b230-bbe1d9858b31",
+      "id": "752be257-9112-4659-809e-d7e47d5b9028",
       "name": "Run SEC EDGAR Filings Scraper",
       "type": "@apify/n8n-nodes-apify.apify",
       "typeVersion": 1,
@@ -64,7 +64,7 @@
         "jsonBody": "={{ $json }}",
         "options": {}
       },
-      "id": "5045790a-03ab-479b-a101-d867df791003",
+      "id": "50b8eb17-066b-47ab-9188-89fa8084495c",
       "name": "Send results to webhook",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,

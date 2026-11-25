@@ -4,6 +4,8 @@
 
 [![Run on Apify](https://img.shields.io/badge/Run%20on-Apify-orange)](https://apify.com/evpp/sec-edgar-filings)
 
+[Open the documentation and crawlable sample explorer](https://intius.github.io/evp-labs-data-extractors/actors/sec-edgar-filings/) for quick inputs, integration links, real sample rows, and ready-made task examples.
+
 ## Why use this SEC EDGAR Filings scraper?
 
 - Export SEC EDGAR Filings data without building or maintaining a custom scraper

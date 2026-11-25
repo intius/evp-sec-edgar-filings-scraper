@@ -1,0 +1,114 @@
+{
+  "name": "SEC EDGAR Filings Scraper to webhook",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "triggerAtHour": 8,
+              "triggerAtMinute": 0
+            }
+          ]
+        }
+      },
+      "id": "0afbc499-0e50-4902-9025-8bf6c67c0e08",
+      "name": "Run every morning",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "resource": "Actors",
+        "operation": "Run actor and get dataset",
+        "actorSource": "store",
+        "actorInputMode": "json",
+        "actorId": {
+          "__rl": true,
+          "value": "00IIAC0foMiBLGKOx",
+          "mode": "list",
+          "cachedResultName": "evpp/sec-edgar-filings",
+          "cachedResultUrl": "https://apify.com/evpp/sec-edgar-filings"
+        },
+        "customBody": "{\n  \"query\": \"\\\"artificial intelligence\\\"\",\n  \"forms\": \"10-K\",\n  \"startDate\": \"2025-01-01\",\n  \"maxItems\": 25\n}",
+        "timeout": 300,
+        "memory": 512,
+        "build": "latest",
+        "authentication": "apifyApi"
+      },
+      "id": "7d2ac836-295f-4730-b893-fd5de120c0a3",
+      "name": "Run SEC EDGAR Filings Scraper",
+      "type": "@apify/n8n-nodes-apify.apify",
+      "typeVersion": 1,
+      "position": [
+        280,
+        0
+      ],
+      "credentials": {
+        "apifyApi": {
+          "name": "<your credential>"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://webhook.site/your-unique-url",
+        "sendBody": true,
+        "contentType": "json",
+        "body": "={{ $json }}",
+        "options": {}
+      },
+      "id": "7574fd2b-2bdc-4d72-a196-725f4597e31a",
+      "name": "Send results to webhook",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        560,
+        0
+      ]
+    }
+  ],
+  "connections": {
+    "Run every morning": {
+      "main": [
+        [
+          {
+            "node": "Run SEC EDGAR Filings Scraper",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Run SEC EDGAR Filings Scraper": {
+      "main": [
+        [
+          {
+            "node": "Send results to webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false
+  },
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": [
+    "apify",
+    "web-scraping",
+    "sec-edgar-filings"
+  ]
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "accessionNumber": "0000320193-26-000026",
+    "form": "10-K",
+    "filingDate": "2026-11-03",
+    "reportDate": "2026-09-26",
+    "cik": [
+      "0000320193"
+    ],
+    "companyNames": [
+      "Apple Inc. (AAPL)"
+    ],
+    "fileNum": "001-36743",
+    "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/0000320193-26-000026-index.htm",
+    "sic": "3571",
+    "matchedQuery": "\"artificial intelligence\""
+  },
+  {
+    "accessionNumber": "0001477932-26-002727",
+    "form": "10-K/A",
+    "filingDate": "2026-05-04",
+    "reportDate": "2025-12-31",
+    "cik": [
+      "0001477960"
+    ],
+    "companyNames": [
+      "Catalyst Crew Technologies Corp. (CCTC)"
+    ],
+    "fileNum": "000-56634",
+    "url": "https://www.sec.gov/Archives/edgar/data/1477960/000147793226002727/0001477932-26-002727-index.htm",
+    "sic": "7370",
+    "matchedQuery": "\"artificial intelligence\""
+  },
+  {
+    "accessionNumber": "0001683168-26-002984",
+    "form": "10-K",
+    "filingDate": "2026-04-15",
+    "reportDate": "2025-12-31",
+    "cik": [
+      "0001594968"
+    ],
+    "companyNames": [
+      "Loan Artificial Intelligence Corp. (LAAI, VEST)"
+    ],
+    "fileNum": "000-56529",
+    "url": "https://www.sec.gov/Archives/edgar/data/1594968/000168316826002984/0001683168-26-002984-index.htm",
+    "sic": "7900",
+    "matchedQuery": "\"artificial intelligence\""
+  },
+  {
+    "accessionNumber": "0001213900-26-104650",
+    "form": "10-K",
+    "filingDate": "2026-09-29",
+    "reportDate": "2026-06-30",
+    "cik": [
+      "0001422892"
+    ],
+    "companyNames": [
+      "Singularity Future Technology Ltd. (SGLY)"
+    ],
+    "fileNum": "001-34024",
+    "url": "https://www.sec.gov/Archives/edgar/data/1422892/000121390026104650/0001213900-26-104650-index.htm",
+    "sic": "4731",
+    "matchedQuery": "\"artificial intelligence\""
+  },
+  {
+    "accessionNumber": "0001493152-26-027796",
+    "form": "10-K",
+    "filingDate": "2026-06-09",
+    "reportDate": "2026-02-28",
+    "cik": [
+      "0001498148"
+    ],
+    "companyNames": [
+      "Artificial Intelligence Technology Solutions Inc. (AITX)"
+    ],
+    "fileNum": "000-55079",
+    "url": "https://www.sec.gov/Archives/edgar/data/1498148/000149315226027796/0001493152-26-027796-index.htm",
+    "sic": "7372",
+    "matchedQuery": "\"artificial intelligence\""
+  }
+]
